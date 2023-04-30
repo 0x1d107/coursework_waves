@@ -1,0 +1,10 @@
+#!/usr/bin/gnuplot -p
+set terminal gif animate delay 10
+set output 'waves.gif'
+stats 'waves.data' nooutput
+set view map
+set cbrange [-1:1]
+
+do for [i=1:int(STATS_blocks)-1:100] {
+    splot 'waves.data' index (i-1) matrix with image;
+}

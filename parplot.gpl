@@ -1,0 +1,6 @@
+#!/usr/bin/gnuplot -c
+set terminal jpeg
+set output sprintf('frames/frame_%03d.jpg',int(ARG2))
+set view map
+set cbrange [-1:1]
+splot sprintf('data/%04d.data',ARG1-1) matrix with image;

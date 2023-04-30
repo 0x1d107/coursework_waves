@@ -1,0 +1,10 @@
+Kalitkin page 424 - wave equations
+https://en.wikipedia.org/wiki/Perfectly_matched_layer
+https://en.wikipedia.org/wiki/Finite-difference_time-domain_method
+https://eecs.wsu.edu/~schneidj/ufdtd/ - Chapter 12
+TODO:
+1. derive a difference scheme for equations
+2. write code
+3. plot graph
+4. ???
+5. profit
