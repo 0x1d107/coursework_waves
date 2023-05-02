@@ -1,9 +1,11 @@
+#include <cstdlib>
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fstream>
+#include "problem.hpp"
 using namespace std;
 /* u_t = v_x
  * v_t = c^2*u_x + F(x,t)
@@ -12,44 +14,14 @@ using namespace std;
  * u(0,t) = m3(t)
  * u(a,t) = m4(t)
  */
-double Pt0(double x,double y){
-    x-=0.5;
-    y-=0.5;
-	
-    if(x*x + y*y < 1.0/100)
-        return 0;
-    return 0;
-}
-double Vxt0(double x,double y){
-    return 0;
-}
-double Vyt0(double x,double y){
-    return 0;
-}
-double F(double x, double y, double t){
-	x-=0.5;
-	y-=0.5;
-    double R = 1.0/20;
-	if(x*x + y*y<R*R)
-		return cos(M_PI*2*10*t+sqrt(x*x+y*y)/R*M_PI)*10;
-	return 0;
-}
-double Csq(double x,double y){
-	x-=0.5;
-	y-=0.5;
-	if(fabs(y)<0.25)
-		return 1;
-//	if(fabs(y)>0.25)
-//		return 2;
-    return 0.15;
-}
-double Sigma_x(double x){
-    return (x<0.2||x>0.8)*exp(8*fabs(x-0.5));
-}
-typedef std::vector<std::vector<double>> grid;
-int main(){
-    int M = 90000; // Time 
-    int N = 300; // X Y
+int main(int argc,char *argv[]){
+    if(argc>1){
+        M = atof(argv[1]);
+        N = sqrt(M);
+    }
+    if(argc>2){
+        N = atof(argv[1]);
+    }
     grid P_a(N,std::vector<double>(N,0));
     grid P_b(N,std::vector<double>(N,0));
     grid Vx_a(N,std::vector<double>(N,0));
@@ -72,15 +44,7 @@ int main(){
     double dt = 1.0/M;
     double dx = 1.0/N;
     double dy = dx;
-
-
-    int dir_status = mkdir("data", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
-    if(dir_status != 0 && errno != EEXIST){
-        cerr << "Failed to create data directory" <<endl;
-        return 1;
-    }
-
-
+    init();
     for(int j=0;j<N;j++){
         double y = j*dy;
         for(int i = 0; i < N; i++){
@@ -90,8 +54,6 @@ int main(){
             Vy0[i][j] = Vyt0(x,y);
         }
     }
-    int T=100;
-    int print_T = 5*T;
     for(int m=0;m<M;m++){
         double t = m * dt;
         #pragma omp parallel for
@@ -115,29 +77,10 @@ int main(){
         std::swap(Vx0,Vx1);
         std::swap(Vy0,Vy1);
         std::swap(Psi0,Psi1);
-        if(m%T)
-            continue;
-        char fname[128];
-        snprintf(fname,128, "data/%04d.pgm",m/T);
-        if(m%print_T==0)
-            fprintf(stderr,"[%d/%d] Computing image %s\033[0K\r",m/T,M/T,fname);
-        std::ofstream data_stream(fname);
-        if(!data_stream.is_open()){
-            cerr <<"Can't open data file" <<endl;
-            return 1;
-        }
-        data_stream<<"P5"<<endl;
-        data_stream<<N<<' '<<N<<endl;
-        data_stream<<255<<endl;
-        for(int j=0;j<N;j++){
-            for(int i=0;i<N;i++){
-                char byte = fmax(fmin(((P1[i][j]+1)/2)*255,255),0);
-                data_stream<< byte;
-            } 
-        }
-        //std::cout <<std::endl<<std::endl;
-        data_stream.close();
+        output_layer(m, t, P1);
     }
+    finished();
+
     return 0;
 
 }
