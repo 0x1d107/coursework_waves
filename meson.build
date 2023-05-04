@@ -5,3 +5,4 @@ openmp_dep = dependency('openmp',language:'cpp')
 deps+=openmp_dep
 executable('waves','waves.cpp','problem.cpp',dependencies:deps)
 executable('simple','waves.cpp','problem-simple.cpp',dependencies:deps)
+executable('analytic','waves.cpp','problem-analytic.cpp',dependencies:deps)
