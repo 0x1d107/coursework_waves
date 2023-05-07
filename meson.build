@@ -6,3 +6,4 @@ deps+=openmp_dep
 executable('waves','waves.cpp','problem.cpp',dependencies:deps)
 executable('simple','waves.cpp','problem-simple.cpp',dependencies:deps)
 executable('analytic','waves.cpp','problem-analytic.cpp',dependencies:deps)
+executable('refraction','waves.cpp','problem-refraction.cpp',dependencies:deps)

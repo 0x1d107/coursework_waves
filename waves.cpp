@@ -41,7 +41,7 @@ int main(int argc,char *argv[]){
     grid &Psi0 = Psi_a;
     grid &Psi1 = Psi_b;
     
-    double dt = 1.0/M;
+    double dt = Time/M;
     double dx = 1.0/N;
     double dy = dx;
     init();

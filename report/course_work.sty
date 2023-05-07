@@ -33,7 +33,7 @@
 \renewcommand{\@biblabel}[1]{#1.} %хотим, чтобы в списке литературы номера источников писались в формате "No. <...>", а не "[No] <...>"
 \makeatother
 
-\usepackage[style=gost-numeric,language=auto]{biblatex}
+\usepackage[style=gost-numeric,language=auto,sorting=none]{biblatex}
 
 
 % ГРАФИКИ
@@ -85,3 +85,8 @@
 \algrenewtext{BeginBlock}{\textbf{Начало блока. }}
 \algrenewtext{EndBlock}{\textbf{Конец блока}}
 \algrenewtext{ElsIf}{\textbf{иначе если }}
+
+% Производные для Дифференциальных уравнений
+
+\newcommand{\diff}[3][]{\frac{\partial ^ { #1 } #2}{\partial #3 ^ { #1 } }}
+\newcommand{\subs}[2]{\left. {#2} \right|_{#1}}

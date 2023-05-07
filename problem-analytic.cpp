@@ -41,6 +41,7 @@ typedef std::vector<std::vector<double>> grid;
 double max_diff = 0;
 int M = 10000; // Time 
 int N = 100; // X Y
+double Time = 1.0;
 void output_layer(int m,double t, const grid &P1){
     double dt = 1.0/M;
     double dx = 1.0/N;

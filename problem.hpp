@@ -12,3 +12,4 @@ void output_layer(int m,double t, const grid &P1);
 void finished();
 extern int M;
 extern int N;
+extern double Time;
