@@ -83,7 +83,7 @@ int main(int argc,char *argv[]){
         std::swap(Vx0,Vx1);
         std::swap(Vy0,Vy1);
         std::swap(Psi0,Psi1);
-        output_layer(m, t, P1);
+        output_layer(m, t, P1,Vx1,Vy1);
     }
     finished();
 

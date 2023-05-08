@@ -22,7 +22,7 @@ double Vyt0(double x,double y){
 }
 double F(double x, double y, double t){
 	x-=0.5;
-	y-=0.5;
+	y-=1.0;
     double R = 1.0/20;
 	if(x*x + y*y<R*R)
 		return cos(M_PI*2*10*t+sqrt(x*x+y*y)/R*M_PI)*10;
@@ -31,11 +31,11 @@ double F(double x, double y, double t){
 double Csq(double x,double y){
 	x-=0.5;
 	y-=0.5;
-	if(fabs(y)<0.25)
-		return 1;
+	if(fabs(y)<0.05 && fabs(x)>0.05)
+		return 0.0;
 //	if(fabs(y)>0.25)
 //		return 2;
-    return 0.15;
+    return 1;
 }
 double Sigma_x(double x){
     return (x<0.2||x>0.8)*exp(8*fabs(x-0.5));
@@ -51,8 +51,8 @@ typedef std::vector<std::vector<double>> grid;
 #define NN 150
 #define VLEN 30
 #define VRATE 24
-double Time = 1.0;
-int M = NN*NN*Time; // Time 
+double Time = 1.5;
+int M = NN*NN*Time*Time; // Time 
 int N = NN; // X Y
 
 void output_layer(int m,double t, const grid &P1,const grid &Vx,const grid &Vy){

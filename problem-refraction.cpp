@@ -57,7 +57,7 @@ double Time = 2.0;
 int M = NN*NN*Time; // Time 
 int N = NN; // X Y
 
-void output_layer(int m,double t, const grid &P1){
+void output_layer(int m,double t, const grid &P1,const grid &Vx,const grid &Vy){
     int T=M/VLEN/VRATE;
     int print_T = 5*T;
     if(m%T)

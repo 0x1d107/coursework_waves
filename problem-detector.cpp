@@ -22,7 +22,7 @@ double Vyt0(double x,double y){
 }
 double F(double x, double y, double t){
 	x-=0.5;
-	y-=0.5;
+	y-=1.0;
     double R = 1.0/20;
 	if(x*x + y*y<R*R)
 		return cos(M_PI*2*10*t+sqrt(x*x+y*y)/R*M_PI)*10;
@@ -31,14 +31,28 @@ double F(double x, double y, double t){
 double Csq(double x,double y){
 	x-=0.5;
 	y-=0.5;
-	if(fabs(y)<0.25)
-		return 1;
+	double R = 1.0/16;
+	if(x*x+y*y<R*R)
+		return 1.0/16;
 //	if(fabs(y)>0.25)
 //		return 2;
-    return 0.15;
+    return 0.25;
 }
 double Sigma_x(double x){
-    return (x<0.2||x>0.8)*exp(8*fabs(x-0.5));
+    return (x<1.0/8||x>7.0/8.0)*exp(8*fabs(x-0.5));
+}
+struct sensor{
+	int i;
+	int j;
+};
+std::vector<sensor> sensors;
+void mksensor(int i, int j){
+    char fname[128];
+    snprintf(fname,128, "sensor/sensor_%dx%d.data",i,j);
+	sensors.push_back({i,j});
+	ofstream sensor_f(fname);
+	sensor_f.close();
+	
 }
 void init(){
     int dir_status = mkdir("data", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
@@ -46,13 +60,22 @@ void init(){
         cerr << "Failed to create data directory" <<endl;
         exit(1);
     }
+    dir_status = mkdir("sensor", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    if(dir_status != 0 && errno != EEXIST){
+        cerr << "Failed to create sensor directory" <<endl;
+        exit(1);
+    }
+	mksensor(N/2, N/4);
+	mksensor(N/4, N/2);
+	mksensor(N/8, N/2);
+
 }
 typedef std::vector<std::vector<double>> grid;
-#define NN 150
+#define NN 100
 #define VLEN 30
 #define VRATE 24
-double Time = 1.0;
-int M = NN*NN*Time; // Time 
+double Time = 3;
+int M = NN*NN*Time*Time; // Time 
 int N = NN; // X Y
 
 void output_layer(int m,double t, const grid &P1,const grid &Vx,const grid &Vy){
@@ -80,7 +103,12 @@ void output_layer(int m,double t, const grid &P1,const grid &Vx,const grid &Vy){
     }
     //std::cout <<std::endl<<std::endl;
     data_stream.close();
-    
+	for(sensor &s: sensors){
+		snprintf(fname,128, "sensor/sensor_%dx%d.data",s.i,s.j);
+		std::ofstream sensor(fname,ios_base::app);
+		sensor << t<<' ' << P1[s.i][s.j]<<' ' <<Vx[s.i][s.j]<<' '<<Vy[s.i][s.j]<<endl;
+		sensor.close();
+	}
 }
 void finished(){
 
