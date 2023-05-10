@@ -8,7 +8,10 @@
 \RequirePackage{hyperref} %кликабельное оглавление
 \RequirePackage[left=3.7cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \RequirePackage{tempora} %настраиваем шрифт типа TNR                                   
-\RequirePackage{newtxmath} %делаем шрифт формул похожим на TNR
+%\RequirePackage{newtxmath} %делаем шрифт формул похожим на TNR
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
 \linespread{1}
 
 %НАСТРОЙКИ ОГЛАВЛЕНИЯ
@@ -34,7 +37,6 @@
 \makeatother
 
 \usepackage[style=gost-numeric,language=auto,sorting=none]{biblatex}
-
 
 % ГРАФИКИ
 \usepackage{tikz}
@@ -90,3 +92,7 @@
 
 \newcommand{\diff}[3][]{\frac{\partial ^ { #1 } #2}{\partial #3 ^ { #1 } }}
 \newcommand{\subs}[2]{\left. {#2} \right|_{#1}}
+ 
+% Fix для операторов действительной и мнимой части
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}

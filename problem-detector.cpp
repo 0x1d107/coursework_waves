@@ -22,16 +22,16 @@ double Vyt0(double x,double y){
 }
 double F(double x, double y, double t){
 	x-=0.5;
-	y-=1.0;
+	y-=0.5;
     double R = 1.0/20;
-	if(x*x + y*y<R*R)
+	if(x*x + y*y<R*R && t < 0.1)
 		return cos(M_PI*2*10*t+sqrt(x*x+y*y)/R*M_PI)*10;
 	return 0;
 }
 double Csq(double x,double y){
 	x-=0.5;
 	y-=0.5;
-	double R = 1.0/16;
+	double R = 0;
 	if(x*x+y*y<R*R)
 		return 1.0/16;
 //	if(fabs(y)>0.25)
@@ -39,7 +39,7 @@ double Csq(double x,double y){
     return 0.25;
 }
 double Sigma_x(double x){
-    return (x<1.0/8||x>7.0/8.0)*exp(8*fabs(x-0.5));
+    return (x<1.0/8||x>7/8.0)*exp(8*fabs(x-0.5));
 }
 struct sensor{
 	int i;
@@ -68,14 +68,15 @@ void init(){
 	mksensor(N/2, N/4);
 	mksensor(N/4, N/2);
 	mksensor(N/8, N/2);
+	mksensor(N/2,N*3/4);
 
 }
 typedef std::vector<std::vector<double>> grid;
-#define NN 100
+#define NN 200
 #define VLEN 30
 #define VRATE 24
 double Time = 3;
-int M = NN*NN*Time*Time; // Time 
+int M = 2*NN*NN*Time; // Time 
 int N = NN; // X Y
 
 void output_layer(int m,double t, const grid &P1,const grid &Vx,const grid &Vy){

@@ -48,7 +48,7 @@ void init(){
     }
 }
 typedef std::vector<std::vector<double>> grid;
-#define NN 150
+#define NN 300
 #define VLEN 30
 #define VRATE 24
 double Time = 1.5;
