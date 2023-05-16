@@ -22,16 +22,19 @@ double Vyt0(double x,double y){
 }
 double F(double x, double y, double t){
 	x-=0.5;
-	y-=0.5;
+	y-=1.0;
     double R = 1.0/20;
 	if(x*x + y*y<R*R && t < 0.1)
-		return cos(M_PI*2*10*t+sqrt(x*x+y*y)/R*M_PI)*10;
+		return cos(M_PI*2*10*t+sqrt(x*x+y*y)/R*M_PI)*10*2;
 	return 0;
 }
+#ifndef RR
+#define RR 1.0/300
+#endif
 double Csq(double x,double y){
 	x-=0.5;
 	y-=0.5;
-	double R = 0;
+	double R = RR;//1.0/300;
 	if(x*x+y*y<R*R)
 		return 1.0/16;
 //	if(fabs(y)>0.25)
@@ -56,6 +59,7 @@ void mksensor(int i, int j){
 }
 void init(){
     int dir_status = mkdir("data", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    cerr << "R = " <<RR<<endl;
     if(dir_status != 0 && errno != EEXIST){
         cerr << "Failed to create data directory" <<endl;
         exit(1);
@@ -72,7 +76,7 @@ void init(){
 
 }
 typedef std::vector<std::vector<double>> grid;
-#define NN 200
+#define NN 300
 #define VLEN 30
 #define VRATE 24
 double Time = 3;
