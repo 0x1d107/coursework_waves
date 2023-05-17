@@ -1,6 +1,4 @@
 build
-*.png
 *.mp4
-*.pdf
 data
 .cache

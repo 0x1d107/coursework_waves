@@ -283,19 +283,26 @@ V_x^{q+1/2}[m,n] = V_x^{q-1/2}[m,n]
 расположены вокруг объекта. Источник колебаний расположен в середине нижней границы вычислительной области.
 Измерим значения давления на датчике, расположенным в точке $\left(\frac{1}{2};\frac{3}{4}\right)$
 (отмечен красной точкой на рисунке \ref{detector}).
-\begin{figure}
+\begin{figure}[h]
     \centering
-	\includegraphics[width=0.8\textwidth]{refl_amp_inv.pdf}
+    \includegraphics[width=0.6\textwidth]{refl_amp_inv.pdf}
     \caption{}
-    \label{reflamp}
+    \label{reflampinv}
 \end{figure}
 \begin{figure}
-	\begin{subfigure}{\textwidth}
+	\begin{subfigure}{0.6\textwidth}
 	\centering
-	\includegraphics[width=0.7\textwidth]{detector.eps}
+    \includegraphics[width=\textwidth]{refl_amp.pdf}
+    \caption{Зависимость амплитуды отраженной волны от радиуса круга }
+	\label{reflamp}
+	\end{subfigure}
+	\begin{subfigure}{0.35\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{detector.eps}
 	\caption{Отражение от круга радиусом $R=\frac{1}{300}$}
 	\label{detector}
 	\end{subfigure}
+
 	\begin{subfigure}{\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{sensor.eps}
@@ -306,7 +313,7 @@ V_x^{q+1/2}[m,n] = V_x^{q-1/2}[m,n]
     \caption{}
 \end{figure}
 
-С уменьшением радиуса круга амплитуда отраженной волны убывает (рисунок \ref{reflamp}). Так как
+С уменьшением радиуса круга амплитуда отраженной волны убывает (рисунок \ref{reflampinv}). Так как
 волна отражается от границ вычислительной области, что вызывает интерференцию с отраженной волной, 
 то существует минимальный радиус круга, который может обнаружить датчик.
 Его можно определить при помощи вычислительных экспериментов. Наименьший радиус круга
