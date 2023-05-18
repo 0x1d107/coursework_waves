@@ -1,0 +1,15 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Введение}{5}{Doc-Start}%
+\contentsline {section}{\numberline {1}Двухслойная акустическая схема}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Одномерная акустическая схема для плоских акустических волн}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Двухмерная акустическая схема. Метод FDTD}{7}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Неотражающие граничные условия. PML}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Аналитическое продолжение решения}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}PML для двухмерных скалярных волн }{10}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Расчет и анализ результатов}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Сходимость численного решения}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Поведение волн на границе сред с разной скоростью звука}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Задача обнаружения объекта внутри вычислительной области}{13}{subsection.3.3}%
+\contentsline {section}{Заключение}{16}{figure.caption.8}%
+\contentsline {section}{Список литературы}{17}{figure.caption.8}%
+\contentsline {section}{Приложение А}{18}{figure.caption.8}%

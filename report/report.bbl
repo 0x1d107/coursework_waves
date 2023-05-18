@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{kal}{book}{}
+      \name{author}{1}{}{%
+        {{hash=20fbf378756f7fe616dcf392007320ae}{%
+           family={Калиткин},
+           familyi={К\bibinitperiod},
+           given={Н.\bibnamedelimi Н.},
+           giveni={Н\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {М.}%
+      }
+      \list{publisher}{1}{%
+        {Издательство <<Наука>>}%
+      }
+      \strng{namehash}{20fbf378756f7fe616dcf392007320ae}
+      \strng{fullhash}{20fbf378756f7fe616dcf392007320ae}
+      \strng{bibnamehash}{20fbf378756f7fe616dcf392007320ae}
+      \strng{authorbibnamehash}{20fbf378756f7fe616dcf392007320ae}
+      \strng{authornamehash}{20fbf378756f7fe616dcf392007320ae}
+      \strng{authorfullhash}{20fbf378756f7fe616dcf392007320ae}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Численные методы.}
+      \field{year}{1978}
+    \endentry
+    \entry{ufdtd}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9dc6d961a47c12e1c0b28b99f9f3d1ce}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dc6d961a47c12e1c0b28b99f9f3d1ce}
+      \strng{fullhash}{9dc6d961a47c12e1c0b28b99f9f3d1ce}
+      \strng{bibnamehash}{9dc6d961a47c12e1c0b28b99f9f3d1ce}
+      \strng{authorbibnamehash}{9dc6d961a47c12e1c0b28b99f9f3d1ce}
+      \strng{authornamehash}{9dc6d961a47c12e1c0b28b99f9f3d1ce}
+      \strng{authorfullhash}{9dc6d961a47c12e1c0b28b99f9f3d1ce}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Understanding the Finite-Difference Time-Domain Method}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb www.eecs.wsu.edu/~schneidj/ufdtd
+      \endverb
+      \verb{url}
+      \verb www.eecs.wsu.edu/~schneidj/ufdtd
+      \endverb
+    \endentry
+    \entry{npml}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f271cef1e5ae0aff0d07deccf21fd368}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Steven\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{fullhash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{bibnamehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{authorbibnamehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{authornamehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{authorfullhash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Notes on Perfectly Matched Layers (PMLs)}
+      \field{year}{2021}
+      \field{volume}{abs/2108.05348}
+      \range{volume}{-1}
+      \verb{eprint}
+      \verb 2108.05348
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2108.05348
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2108.05348
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
