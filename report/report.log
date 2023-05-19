@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  18 MAY 2023 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  19 MAY 2023 07:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2649,7 +2649,7 @@ nts/enc/dvips/tempora/t2a-tempora.enc}] [5] [6]
 <scheme1d.png, id=135, 322.20375pt x 137.51375pt>
 File: scheme1d.png Graphic file (type png)
 <use scheme1d.png>
-Package pdftex.def Info: scheme1d.png  used on input line 85.
+Package pdftex.def Info: scheme1d.png  used on input line 74.
 (pdftex.def)             Requested size: 322.20296pt x 137.51341pt.
  [7 <./scheme1d.png>]
 Package epstopdf Info: Source file: <acoustic-2d-grid-ru.eps>
@@ -2660,35 +2660,28 @@ Package epstopdf Info: Source file: <acoustic-2d-grid-ru.eps>
 (epstopdf)                    size: 39152 bytes
 (epstopdf)             Command: <repstopdf --outfile=acoustic-2d-grid-ru-eps-co
 nverted-to.pdf acoustic-2d-grid-ru.eps>
-(epstopdf)             \includegraphics on input line 118.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 <acoustic-2d-grid-ru-eps-converted-to.pdf, id=150, 495.8525pt x 466.74374pt>
 File: acoustic-2d-grid-ru-eps-converted-to.pdf Graphic file (type pdf)
 <use acoustic-2d-grid-ru-eps-converted-to.pdf>
 Package pdftex.def Info: acoustic-2d-grid-ru-eps-converted-to.pdf  used on inpu
-t line 118.
+t line 107.
 (pdftex.def)             Requested size: 326.49545pt x 307.3325pt.
  [8 <./acoustic-2d-grid-ru-eps-converted-to.pdf>]
-<pml-continuation.pdf, id=180, 536.0025pt x 418.56375pt>
+<pml-continuation.pdf, id=183, 536.0025pt x 418.56375pt>
 File: pml-continuation.pdf Graphic file (type pdf)
 <use pml-continuation.pdf>
-Package pdftex.def Info: pml-continuation.pdf  used on input line 166.
+Package pdftex.def Info: pml-continuation.pdf  used on input line 162.
 (pdftex.def)             Requested size: 435.32727pt x 339.94168pt.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.0pt on input line 170.
- [9] [10 <./pml-continuation.pdf>]
-Overfull \hbox (26.91606pt too wide) in paragraph at lines 240--242
-\T2A/Tempora-TLF/m/n/14 Решением дан-ной за-да-чи яв-ля-ет-ся функ-ция $\OML/cm
-m/m/it/14.4 P\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x; y; t\OT1/cmr/m/n/14.4 ) =
- [] []\OML/cmm/m/it/14.4 ^^Yt [] ^^Yx [] ^^Yy$ 
- []
-
-<err-graph.pdf, id=207, 862.22125pt x 419.5675pt>
+(Font)              scaled to size 14.0pt on input line 166.
+ [9] [10 <./pml-continuation.pdf>] [11]
+<err-graph.pdf, id=222, 862.22125pt x 419.5675pt>
 File: err-graph.pdf Graphic file (type pdf)
 <use err-graph.pdf>
-Package pdftex.def Info: err-graph.pdf  used on input line 248.
+Package pdftex.def Info: err-graph.pdf  used on input line 244.
 (pdftex.def)             Requested size: 435.32727pt x 211.8319pt.
-[11]
 Package epstopdf Info: Source file: <refl.eps>
 (epstopdf)                    date: 2023-05-09 12:30:13
 (epstopdf)                    size: 192006 bytes
@@ -2697,15 +2690,15 @@ Package epstopdf Info: Source file: <refl.eps>
 (epstopdf)                    size: 15665 bytes
 (epstopdf)             Command: <repstopdf --outfile=refl-eps-converted-to.pdf 
 refl.eps>
-(epstopdf)             \includegraphics on input line 260.
+(epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
-<refl-eps-converted-to.pdf, id=218, 578.16pt x 578.16pt>
+<refl-eps-converted-to.pdf, id=224, 578.16pt x 578.16pt>
 File: refl-eps-converted-to.pdf Graphic file (type pdf)
 <use refl-eps-converted-to.pdf>
-Package pdftex.def Info: refl-eps-converted-to.pdf  used on input line 260.
+Package pdftex.def Info: refl-eps-converted-to.pdf  used on input line 262.
 (pdftex.def)             Requested size: 130.5995pt x 130.59206pt.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.77509pt on input line 261.
+(Font)              scaled to size 12.77509pt on input line 263.
 Package epstopdf Info: Source file: <refr.eps>
 (epstopdf)                    date: 2023-05-09 15:08:46
 (epstopdf)                    size: 65100 bytes
@@ -2714,12 +2707,12 @@ Package epstopdf Info: Source file: <refr.eps>
 (epstopdf)                    size: 13656 bytes
 (epstopdf)             Command: <repstopdf --outfile=refr-eps-converted-to.pdf 
 refr.eps>
-(epstopdf)             \includegraphics on input line 266.
+(epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
-<refr-eps-converted-to.pdf, id=219, 289.08pt x 289.08pt>
+<refr-eps-converted-to.pdf, id=225, 289.08pt x 289.08pt>
 File: refr-eps-converted-to.pdf Graphic file (type pdf)
 <use refr-eps-converted-to.pdf>
-Package pdftex.def Info: refr-eps-converted-to.pdf  used on input line 266.
+Package pdftex.def Info: refr-eps-converted-to.pdf  used on input line 268.
 (pdftex.def)             Requested size: 130.5995pt x 130.59647pt.
 Package epstopdf Info: Source file: <difr.eps>
 (epstopdf)                    date: 2023-05-09 15:19:46
@@ -2729,15 +2722,18 @@ Package epstopdf Info: Source file: <difr.eps>
 (epstopdf)                    size: 13674 bytes
 (epstopdf)             Command: <repstopdf --outfile=difr-eps-converted-to.pdf 
 difr.eps>
-(epstopdf)             \includegraphics on input line 272.
+(epstopdf)             \includegraphics on input line 274.
 Package epstopdf Info: Output file is already uptodate.
-<difr-eps-converted-to.pdf, id=220, 289.08pt x 289.08pt>
+<difr-eps-converted-to.pdf, id=226, 289.08pt x 289.08pt>
 File: difr-eps-converted-to.pdf Graphic file (type pdf)
 <use difr-eps-converted-to.pdf>
-Package pdftex.def Info: difr-eps-converted-to.pdf  used on input line 272.
+Package pdftex.def Info: difr-eps-converted-to.pdf  used on input line 274.
 (pdftex.def)             Requested size: 130.5995pt x 130.59647pt.
- [12 <./err-graph.pdf> <./refl-eps-converted-to.pdf> <./refr-eps-converted-to.p
-df> <./difr-eps-converted-to.pdf>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./err-graph.pdf>]
 Package epstopdf Info: Source file: <detector.eps>
 (epstopdf)                    date: 2023-05-15 15:11:06
 (epstopdf)                    size: 118431 bytes
@@ -2746,24 +2742,28 @@ Package epstopdf Info: Source file: <detector.eps>
 (epstopdf)                    size: 12583 bytes
 (epstopdf)             Command: <repstopdf --outfile=detector-eps-converted-to.
 pdf detector.eps>
-(epstopdf)             \includegraphics on input line 298.
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 <detector-eps-converted-to.pdf, id=247, 289.08pt x 289.08pt>
 File: detector-eps-converted-to.pdf Graphic file (type pdf)
 <use detector-eps-converted-to.pdf>
-Package pdftex.def Info: detector-eps-converted-to.pdf  used on input line 298.
+Package pdftex.def Info: detector-eps-converted-to.pdf  used on input line 308.
 
-(pdftex.def)             Requested size: 217.66364pt x 217.66078pt.
+(pdftex.def)             Requested size: 130.5995pt x 130.59647pt.
 <refl_amp.pdf, id=248, 462.52798pt x 346.89601pt>
 File: refl_amp.pdf Graphic file (type pdf)
 <use refl_amp.pdf>
-Package pdftex.def Info: refl_amp.pdf  used on input line 306.
+Package pdftex.def Info: refl_amp.pdf  used on input line 316.
 (pdftex.def)             Requested size: 435.32727pt x 326.51103pt.
 <refl_amp_inv.pdf, id=249, 462.52798pt x 346.89601pt>
 File: refl_amp_inv.pdf Graphic file (type pdf)
 <use refl_amp_inv.pdf>
-Package pdftex.def Info: refl_amp_inv.pdf  used on input line 312.
+Package pdftex.def Info: refl_amp_inv.pdf  used on input line 322.
 (pdftex.def)             Requested size: 435.32727pt x 326.51103pt.
+
+
+LaTeX Warning: Float too large for page by 7.57632pt on input line 327.
+
 Package epstopdf Info: Source file: <sensor.eps>
 (epstopdf)                    date: 2023-05-15 12:51:12
 (epstopdf)                    size: 41570 bytes
@@ -2772,27 +2772,26 @@ Package epstopdf Info: Source file: <sensor.eps>
 (epstopdf)                    size: 14322 bytes
 (epstopdf)             Command: <repstopdf --outfile=sensor-eps-converted-to.pd
 f sensor.eps>
-(epstopdf)             \includegraphics on input line 323.
+(epstopdf)             \includegraphics on input line 333.
 Package epstopdf Info: Output file is already uptodate.
 <sensor-eps-converted-to.pdf, id=250, 361.35pt x 216.81pt>
 File: sensor-eps-converted-to.pdf Graphic file (type pdf)
 <use sensor-eps-converted-to.pdf>
-Package pdftex.def Info: sensor-eps-converted-to.pdf  used on input line 323.
+Package pdftex.def Info: sensor-eps-converted-to.pdf  used on input line 333.
 (pdftex.def)             Requested size: 435.32727pt x 261.19955pt.
-LaTeX Font Info:    Calculating math sizes for size <12.77509> on input line 32
+LaTeX Font Info:    Calculating math sizes for size <12.77509> on input line 33
 5.
 
-
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.77509> not available
-(Font)              size <12> substituted on input line 325.
+(Font)              size <12> substituted on input line 335.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.77509> not available
-(Font)              size <12> substituted on input line 325.
+(Font)              size <12> substituted on input line 335.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.77509> not available
-(Font)              size <12> substituted on input line 325.
+(Font)              size <12> substituted on input line 335.
 
 
 
@@ -2801,28 +2800,29 @@ ion <1.7>, but at most version <1.5> allowed
 <sensordiff.pdf, id=251, 361.35pt x 216.81pt>
 File: sensordiff.pdf Graphic file (type pdf)
 <use sensordiff.pdf>
-Package pdftex.def Info: sensordiff.pdf  used on input line 330.
+Package pdftex.def Info: sensordiff.pdf  used on input line 340.
 (pdftex.def)             Requested size: 435.32727pt x 261.19955pt.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 9.79996pt on input line 341.
+(Font)              scaled to size 9.79996pt on input line 352.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 341.
-[13 <./detector-eps-converted-to.pdf>] [14 <./refl_amp.pdf> <./refl_amp_inv.pdf
->] [15 <./sensor-eps-converted-to.pdf> <./sensordiff.pdf>] [16
+(Font)              scaled to size 7.0pt on input line 352.
+[13 <./refl-eps-converted-to.pdf> <./refr-eps-converted-to.pdf> <./difr-eps-con
+verted-to.pdf> <./detector-eps-converted-to.pdf>] [14 <./refl_amp.pdf> <./refl_
+amp_inv.pdf>] [15 <./sensor-eps-converted-to.pdf> <./sensordiff.pdf>] [16]
+[17
 
 ]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-373.
-
-(/usr/share/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+390.
+ (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (14.57224pt too wide) in paragraph at lines 374--374
+Overfull \hbox (14.57224pt too wide) in paragraph at lines 391--391
 []\T2A/Tempora-TLF/m/it/14 Schneider J. B. \T2A/Tempora-TLF/m/n/14 Understandin
 g the Finite-Difference Time-Domain Method. ^^V
  []
 
-[17{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+[18{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -2838,12 +2838,12 @@ LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <9.3334> not available
 (../waves.cpp
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 9.3334pt on input line 41.
- [18]) (../problem.cpp [19] [20]) (../problem-detector.cpp
-[21] [22]) (../problem-difraction.cpp [23]) (../problem-refraction.cpp [24]
-[25]) (../problem-simple.cpp) [26] (../problem-analytic.cpp [27])
+ [19]) (../problem.cpp [20] [21]) (../problem-detector.cpp
+[22] [23]) (../problem-difraction.cpp [24]) (../problem-refraction.cpp [25]
+[26]) (../problem-simple.cpp) [27] (../problem-analytic.cpp [28])
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf>
-Package pdftex.def Info: cover.pdf  used on input line 388.
+Package pdftex.def Info: cover.pdf  used on input line 405.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 
 
@@ -2851,7 +2851,7 @@ pdfTeX warning: pdflatex (file ./cover.pdf): PDF inclusion: found PDF version <
 1.6>, but at most version <1.5> allowed
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf>
-Package pdftex.def Info: cover.pdf  used on input line 388.
+Package pdftex.def Info: cover.pdf  used on input line 405.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 
 
@@ -2861,29 +2861,29 @@ pdfTeX warning: pdflatex (file ./cover.pdf): PDF inclusion: found PDF version <
 
 pdfTeX warning: pdflatex (file ./cover.pdf): PDF inclusion: found PDF version <
 1.6>, but at most version <1.5> allowed
-<cover.pdf, id=1039, page=11, 597.53635pt x 845.04686pt>
+<cover.pdf, id=1049, page=11, 597.53635pt x 845.04686pt>
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 11>
-Package pdftex.def Info: cover.pdf , page11 used on input line 388.
+Package pdftex.def Info: cover.pdf , page11 used on input line 405.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 11>
-Package pdftex.def Info: cover.pdf , page11 used on input line 388.
+Package pdftex.def Info: cover.pdf , page11 used on input line 405.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-[28]
+[29]
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 11>
-Package pdftex.def Info: cover.pdf , page11 used on input line 388.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: cover.pdf Graphic file (type pdf)
-<use cover.pdf, page 11>
-Package pdftex.def Info: cover.pdf , page11 used on input line 388.
+Package pdftex.def Info: cover.pdf , page11 used on input line 405.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 11>
-Package pdftex.def Info: cover.pdf , page11 used on input line 388.
+Package pdftex.def Info: cover.pdf , page11 used on input line 405.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [29 <./cover.pdf>] (./report.aux)
+File: cover.pdf Graphic file (type pdf)
+<use cover.pdf, page 11>
+Package pdftex.def Info: cover.pdf , page11 used on input line 405.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [30 <./cover.pdf>] (./report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.77509pt have occurred.
@@ -2896,12 +2896,12 @@ Package logreq Info: Writing requests to 'report.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  42968 strings out of 476025
- 779064 string characters out of 5796533
+ 779036 string characters out of 5796533
  1976388 words of memory out of 5000000
- 62013 multiletter control sequences out of 15000+600000
+ 62009 multiletter control sequences out of 15000+600000
  541308 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,17n,131p,679b,3183s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 123i,17n,131p,1195b,3183s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-di
 st/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/
@@ -2915,10 +2915,10 @@ blic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 r/share/texmf-dist/fonts/type1/public/cm-super/sfit0900.pfb></usr/share/texmf-d
 ist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1
 /public/cm-super/sftt1440.pfb>
-Output written on report.pdf (29 pages, 659667 bytes).
+Output written on report.pdf (30 pages, 662183 bytes).
 PDF statistics:
- 1286 PDF objects out of 1440 (max. 8388607)
- 1106 compressed objects within 12 object streams
- 706 named destinations out of 1000 (max. 500000)
+ 1297 PDF objects out of 1440 (max. 8388607)
+ 1116 compressed objects within 12 object streams
+ 710 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
