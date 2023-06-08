@@ -35,10 +35,10 @@ double Csq(double x,double y){
 		return 1;
 //	if(fabs(y)>0.25)
 //		return 2;
-    return 0.15;
+    return 1;
 }
 double Sigma_x(double x){
-    return (x<0.2||x>0.8)*exp(8*fabs(x-0.5));
+    return 0;
 }
 void init(){
     int dir_status = mkdir("data", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
@@ -48,7 +48,7 @@ void init(){
     }
 }
 typedef std::vector<std::vector<double>> grid;
-#define NN 300
+#define NN 150
 #define VLEN 30
 #define VRATE 24
 double Time = 1.0;

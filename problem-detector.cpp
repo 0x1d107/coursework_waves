@@ -20,6 +20,9 @@ double Vxt0(double x,double y){
 double Vyt0(double x,double y){
     return 0;
 }
+double dricker(double x){
+    return 2.0/3*(sqrt(3)*x*x*x - 3*sqrt(3)*x)*exp(-1.0/2*x*x)/pow(M_PI,1.0/4);  
+}
 double F(double x, double y, double t){
 	x-=0.5;
 	y-=1.0;
@@ -29,7 +32,7 @@ double F(double x, double y, double t){
 	return 0;
 }
 #ifndef RR
-#define RR 1.0/300
+#define RR 1.0/16
 #endif
 double Csq(double x,double y){
 	x-=0.5;
@@ -76,7 +79,7 @@ void init(){
 
 }
 typedef std::vector<std::vector<double>> grid;
-#define NN 300
+#define NN 200
 #define VLEN 30
 #define VRATE 24
 double Time = 3;

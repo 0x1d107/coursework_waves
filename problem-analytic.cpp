@@ -21,7 +21,7 @@ double F(double x, double y, double t){
 	return 0;
 }
 double Csq(double x,double y){
-    return 1;
+    return 1.0/16;
 }
 double Sigma_x(double x){
     return 0;

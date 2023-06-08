@@ -63,10 +63,14 @@ int main(int argc,char *argv[]){
             for(int i = 0; i < N; i++){
                 double x = i*dx;
                 if(i>=1&&j>=1&&i<N-1&&j<N-1){
+                    double omega0=1000;
+                    double att = (P0[i+1][j]-2*P0[i][j]+P0[i-1][j])/dx/dx
+                        +(P0[i][j+1]-2*P0[i][j]+P0[i][j-1])/dy/dy;
+                    att/=omega0;
                     P1[i][j] = P0[i][j] - Csq(x,y) * dt*(
                             (Vx0[i][j]-Vx0[i-1][j])/dx
                             + (Vy0[i][j] - Vy0[i][j-1])/dy 
-                            ) + dt*F(x,y,t) - dt * Sigma_x(x)*P0[i][j] + dt*Psi0[i][j];
+                            ) + dt*att+ dt*F(x,y,t) - dt * Sigma_x(x)*P0[i][j] + dt*Psi0[i][j];
                 }
                 if(i<N-1&&j<N-1){
                     Vx1[i][j] = Vx0[i][j] - dt/dx *( P1[i+1][j] - P1[i][j]) - dt*Sigma_x(x)*Vx0[i][j];
